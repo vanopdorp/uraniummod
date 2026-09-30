@@ -1,6 +1,9 @@
-beforeinstallpromptevent.prompt()
-while (true) {
-    alert('bwaahahaahahaa je hebt net je game verpest');
-}while (true) {
-    alert('bwaahahaahahaa je hebt net je game verpest');
-}
+runAfterLoad(function() {
+    // Doorloop alle pixels op de grid en maak ze leeg
+    for (let x = 0; x < width; x++) {
+        for (let y = 0; y < height; y++) {
+            deletePixel(x, y);
+        }
+    }
+    console.log("Scherm succesvol leeggemaakt bij het opstarten!");
+});
